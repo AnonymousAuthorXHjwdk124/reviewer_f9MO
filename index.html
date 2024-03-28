@@ -104,44 +104,50 @@
   </section>
 
 
-  <section id="Images_container_2d3d" style="margin-top: 20px; margin-bottom: 100px;"> <!-- Add margin-top and margin-bottom styles -->
+  <section id="Images_container_2d3d" style="margin-top: 20px; margin-bottom: 100px;">
     <div class="container is-max-desktop">
-      <h1 style="margin-bottom: 20px; font-weight: bold;  font-size: 28px;">Question 1: Non-Upsampling QTT Results Across Experiments</h1> <!-- Add font-weight: bold; to make the headline bold -->
-
-      <div class="columns is-centered"> <!-- Center the columns -->
-        <!-- Top row with two images -->
-        <div class="container_smallest" style="margin-top: 20px;"> <!-- Add margin-top style to create space between title and images -->
+      <h1 style="margin-bottom: 20px; font-weight: bold; font-size: 28px;">Question 1: Non-Upsampling QTT Results Across Experiments</h1>
+  
+      <div class="columns is-centered">
+        <div class="container_smallest" style="margin-top: 20px;">
+          <h2 style="font-weight: bold; font-size: 20px;">2D Compression PSNR vs Iterations</h2>
+          <p>PSNR (y-axis) vs compression ratio (x-axis) for 2D fitting. “up = upsampling” and TT No-Up is the QTT model without upsampling. Error bars show ±1 standard deviation interval.</p>
           <img src="static/images/2dpsnr.png" alt="Image 1">
-          <p><b>PSNR</b> (y-axis) vs compression ratio (x-axis) for <b>2D</b> fitting. “up = upsampling” and TT No-Up is the QTT model without upsampling. Error bars show ±1 standard deviation interval.</p>
         </div>
       </div>
-      <div class="columns is-centered"> <!-- Center the columns -->
-        <div class="container_smallest" style="margin-top: 20px;"> <!-- Add margin-top style to create space between title and images -->
+  
+      <div class="columns is-centered">
+        <div class="container_smallest" style="margin-top: 20px;">
+          <h2 style="font-weight: bold; font-size: 20px;">2D Compression SSIM vs Iterations</h2>
+          <p>SSIM (y-axis) vs compression ratio (x-axis) for 2D fitting. “up = upsampling” and TT No-Up is the QTT model without upsampling. Error bars show ±1 standard deviation interval.</p>
           <img src="static/images/2dssim.png" alt="Image 2">
-          <p><b>SSIM</b> (y-axis) vs compression ratio (x-axis) for <b>2D</b> fitting. “up = upsampling” and TT No-Up is the QTT model without upsampling. Error bars show ±1 standard deviation interval.</p>
         </div>
-        
       </div>
-      <div class="columns is-centered"> <!-- Center the columns -->
-        <div class="container_smallest" style="margin-top: 20px;"> <!-- Add margin-top style to create space between title and images -->
+      
+      <div class="columns is-centered">
+        <div class="container_smallest" style="margin-top: 20px;">
+          <h2 style="font-weight: bold; font-size: 20px;">3D Compression PSNR vs Iterations</h2>
+          <p>PSNR (y-axis) vs compression ratio (x-axis) for 3D fitting. “up = upsampling” and TT No-Up is the QTT model without upsampling. Error bars show ±1 standard deviation interval.</p>
           <img src="static/images/3dpsnr.png" alt="Image 3">
-          <p><b>PSNR</b> (y-axis) vs compression ratio (x-axis) for <b>3D</b> fitting. “up = upsampling” and TT No-Up is the QTT model without upsampling. Error bars show ±1 standard deviation interval.</p>
         </div>
       </div>
-      <div class="columns is-centered"> <!-- Center the columns -->
-        <div class="container_smallest" style="margin-top: 20px;"> <!-- Add margin-top style to create space between title and images -->
+      
+      <div class="columns is-centered">
+        <div class="container_smallest" style="margin-top: 20px;">
+          <h2 style="font-weight: bold; font-size: 20px;">3D Compression SSIM vs Iterations</h2>
+          <p>SSIM (y-axis) vs compression ratio (x-axis) for 3D fitting. “up = upsampling” and TT No-Up is the QTT model without upsampling. Error bars show ±1 standard deviation interval.</p>
           <img src="static/images/3dssim.png" alt="Image 4">
-          <p><b>SSIM</b> (y-axis) vs compression ratio (x-axis) for <b>3D</b> fitting. “up = upsampling” and TT No-Up is the QTT model without upsampling. Error bars show ±1 standard deviation interval.</p>
         </div>
       </div>
-
     </div>
   </section>
-
+  
+  
+  
   <section id="Images_container_stability" style="margin-top: 20px;"> <!-- Add margin-top and margin-bottom styles -->
     <div class="container is-max-desktop">
       <h1 style="margin-bottom: 20px; font-weight: bold;  font-size: 28px;">Question 3: Mitigation of Local Minima in Training</h1> <!-- Add font-weight: bold; to make the headline bold -->
-
+      <h2 style="font-weight: bold; font-size: 20px;">PuTT vs QTT Without Upsampling Ablation Experiment for 4K Images</h2>
       <div class="columns is-centered"> <!-- Center the columns -->
         <div class="column is-half"> <!-- Limit the width of the column -->
           <div class="image-container">
@@ -159,25 +165,26 @@
   </section>
 
 
-  <section id="Images_container_initialization" style="margin-top: 20px; margin-bottom: 50px;"> <!-- Add margin-top and margin-bottom styles for the new section -->
+  <section id="Images_container_initialization" style="margin-top: 20px; margin-bottom: 50px;">
     <div class="container is-max-desktop">
-      <h1 style="margin-bottom: 20px; font-weight: bold;  font-size: 28px;">Question 4: Initialization Techniques for PuTT and Their Impact</h1> <!-- Add font-weight: bold; to make the headline bold -->
+      <h1 style="margin-bottom: 20px; font-weight: bold; font-size: 28px;">Question 4: Initialization Techniques for PuTT and Their Impact</h1>
+      <h2 style="font-weight: bold; font-size: 20px; margin-bottom: 20px;">QTT Initialization Experiment</h2>
       <div class="columns is-centered">
         <div class="column is-half">
           <div class="image-container_small">
             <img src="static/images/initialization_exp.png" alt="SlimNERF Experiment">
             <p>Comparison of average PSNR (± 1 standard deviation) values for Lena 512x512x3 image over 3000 iterations with various initialization standard deviations (&sigma;) per core, mean of zero, for PuTT and QTT without upsampling. TT-NF init. is the TT-NF initialization as detailed in Appendix D.2 Line 774. PuTT employs four upsampling steps at iterations [50, 100, 200, 400]. All experiments use a rank of 100, a learning rate of 5e-3, and a batch size of 128<sup>2</sup>. Results are averaged over three seeds.</p>
-
           </div>
         </div>
       </div>
     </div>
   </section>
+  
 
   <section id="Images_container_flops" style="margin-top: 20px; margin-bottom: 50px;"> <!-- Add margin-top and margin-bottom styles -->
     <div class="container is-max-desktop">
       <h1 style="margin-bottom: 20px; font-weight: bold;  font-size: 28px;">Question 5: Computational Complexity and Efficiency of PuTT</h1> <!-- Add font-weight: bold; to make the headline bold -->
-
+      <h2 style="font-weight: bold; font-size: 20px;  margin-bottom: 20px;">Image Dimension vs FLOPs</h2>
       <div class="columns is-centered"> <!-- Center the columns -->
         <div class="column is-half"> <!-- Limit the width of the column -->
           <div class="image-container">
@@ -195,6 +202,7 @@
   <section id="Images_container_barbara" style="margin-top: 20px; margin-bottom: 50px;">
     <div class="container is-max-desktop">
       <h1 style="margin-bottom: 20px; font-weight: bold;  font-size: 28px;">Question 9: Comparison of Training on a Fraction of Input with Previous Work.</h1> <!-- Add font-weight: bold; to make the headline bold -->
+      <h2 style="font-weight: bold; font-size: 20px; margin-bottom: 20px;">PuTT vs QTT Without Upsampling Ablation for Missing Data Experiments</h2>
       <div class="columns is-centered"> <!-- Center the columns -->
         <!-- Top row with two images -->
         <div class="column is-half has-text-centered"> <!-- Center the column and limit to half width -->
